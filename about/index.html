@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Hardware - Self-Driving Vehicle</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Hardware";
+    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Self-Driving Vehicle</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Hardware</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-raspberry-pi-3b">1. Raspberry pi 3b</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-pca9685-driver">2. PCA9685 driver</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications_1">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_1">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-rc-car-chassis">3. RC Car Chassis</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications_2">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_2">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-10000mah-mi-power-bank-2i">4. 10000mAh Mi Power Bank 2i</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_3">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-3d-printed-parts">5. 3D printed parts</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_1">Description:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-16gb-micro-sd-card">6. 16GB Micro SD Card</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_2">Description:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-wide-angle-raspberry-pi-camera">7. Wide Angle Raspberry Pi Camera:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications_3">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_4">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-electronic-speed-controlleresc">8. Electronic Speed Controller(ESC):</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications_4">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_5">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-servo">9. Servo:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description-and-specifications_5">Description and specifications:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#link-to-buy_6">Link to buy</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../cost/">Cost</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../googlecolab/">Google Colab</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../algorithms/">Algorithms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Self-Driving Vehicle</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Hardware</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hardware-requirements">Hardware Requirements</h1>
+<h3 id="1-raspberry-pi-3b">1. Raspberry pi 3b</h3>
+<h6 id="description-and-specifications">Description and specifications:</h6>
+<p>ARM microprocessor where training evaluation takes place by
+controlling steering and throttle. <br/></p>
+<p><img alt="Screenshot" src="../img/rpi.jpg" /></p>
+<ul>
+<li>Broadcom BCM2837 64bitARMv7 Quad Core Processor powered Single Board
+Computer running at 1.2GHz</li>
+<li>1GBRAM</li>
+<li>BCM43143 WiFion board</li>
+<li>Bluetooth Low Energy (BLE) on board</li>
+<li>40pin extended GPIO</li>
+<li>USB 2 ports</li>
+<li>Full size HDMICSI camera port for connecting the Raspberry Pi camera</li>
+<li>DSI display port for connecting the Raspberry Pi touch screen display</li>
+<li>Micro USB power source supports up to 2.4 Amps</li>
+</ul>
+<h6 id="link-to-buy"><a href="https://www.banggood.in/Raspberry-Pi-3-Model-B-ARM-Cortex-A53-CPU-1_2GHz-64-Bit-Quad-Core-1GB-RAM-10-Times-B-p-1041862.html?rmmds=buy&amp;cur_warehouse=CN">Link to buy</a></h6>
+<h3 id="2-pca9685-driver">2. PCA9685 driver</h3>
+<h6 id="description-and-specifications_1">Description and specifications:</h6>
+<p>The PCA9685 is an I2C-bus controlled 16-channel LED or
+(servo) controller optimized for Red/Green/Blue/Amber (RGBA) color backlight-
+ing applications.</p>
+<p><img alt="Screenshot" src="../img/pca1.jpg" style="height:108px;width:310px" /></p>
+<ul>
+<li>16 LED drivers</li>
+<li>1 MHz Fast-mode Plus compatible I2C-bus interface with 30 mA high drive capability on SDA output for driving high capacitive buses</li>
+<li>Operating power supply voltage range of 2.3 V to 5.5 V</li>
+<li>25 MHz typical internal oscillator</li>
+</ul>
+<h6 id="link-to-buy_1"><a href="https://www.banggood.in/PCA9685-16-Channel-12-bit-PWM-Servo-Motor-Driver-I2C-Module-p-1170343.html?rmmds=search&amp;cur_warehouse=CN">Link to buy</a></h6>
+<h3 id="3-rc-car-chassis">3. RC Car Chassis</h3>
+<h6 id="description-and-specifications_2">Description and specifications:</h6>
+<p>HSP 94186 Brushed RC Car</p>
+<p><img alt="Screenshot" src="../img/rc1.jpg" /></p>
+<ul>
+<li>NiMH-7.2V-1100mAh battery</li>
+<li>Powerful motor: Rc380</li>
+<li>Scale: 1/16</li>
+<li>Controller: 2.4G 2CH</li>
+</ul>
+<h6 id="link-to-buy_2"><a href="https://www.banggood.in/HBX-18859E-RC-Car-1-or-18-2_4G-4WD-Off-Road-Electric-Powered-Crawler-p-1282278.html?rmmds=search&amp;cur_warehouse=CN">Link to buy</a></h6>
+<h3 id="4-10000mah-mi-power-bank-2i">4. 10000mAh Mi Power Bank 2i</h3>
+<h6 id="description">Description:</h6>
+<p>To supply power to the Raspberry Pi.</p>
+<ul>
+<li>Lithium Polymer Battery</li>
+<li>Rated capacity: 3.85V/10000mAh</li>
+<li>Output: 18W max (5.1V/2.4A, 9V/2A, 12V/1.5A)</li>
+</ul>
+<h6 id="link-to-buy_3"><a href="https://www.amazon.in/Mi-10000mAH-Li-Polymer-Power-Charging/dp/B07VZRJQX1">Link to buy</a></h6>
+<p><span style="color:red">
+Note:<br/>
+1. Make sure that the output current rating of the power bank is 2.4A or else the Raspberry Pi will face connectivity issues.<br/>
+2. Use an appropriate cable (suitable for fast charging or which supports 2.4A) for connecting the Raspberry Pi to the Power Bank.
+</span></p>
+<h3 id="5-3d-printed-parts">5. 3D printed parts</h3>
+<h6 id="description_1">Description:</h6>
+<p>Required to support Processor, servo driver and camera.</p>
+<h3 id="6-16gb-micro-sd-card">6. 16GB Micro SD Card</h3>
+<h6 id="description_2">Description:</h6>
+<p>Used for flashing Raspbian os act as a Read only memory(ROM).</p>
+<h3 id="7-wide-angle-raspberry-pi-camera">7. Wide Angle Raspberry Pi Camera:</h3>
+<h6 id="description-and-specifications_3">Description and specifications:</h6>
+<ul>
+<li>Fisheye Lens, offers wider field of view</li>
+<li>5 megapixel OV5647 sensor</li>
+<li>Field of View : 160 degree</li>
+</ul>
+<h6 id="link-to-buy_4"><a href="https://www.banggood.in/Camera-Module-For-Raspberry-Pi-4-Model-B-3-Model-B-2B-B-A-p-1051437.html?rmmds=search&amp;cur_warehouse=CN">Link to buy</a></h6>
+<h3 id="8-electronic-speed-controlleresc">8. Electronic Speed Controller(ESC):</h3>
+<h6 id="description-and-specifications_4">Description and specifications:</h6>
+<ul>
+<li>Powerday RC ESC 10A Brushed Motor Speed Controller for RC Car and Boat Tank with Brake</li>
+<li>Driver frequency: 2KHz</li>
+<li>Dimensions(L<em>W</em>H): 23<em>21</em>6.0mm</li>
+<li>Current(A):10A<br/>
+<img alt="Screenshot" src="../img/esc.jpg" style="height:266px;width:266px" /></li>
+</ul>
+<h6 id="link-to-buy_5"><a href="https://www.banggood.in/10A-ESC-Brushed-Speed-Controller-For-RC-Car-And-Boat-p-908719.html?rmmds=search&amp;cur_warehouse=CN">Link to buy</a></h6>
+<h3 id="9-servo">9. Servo:</h3>
+<h6 id="description-and-specifications_5">Description and specifications:</h6>
+<ul>
+<li>Robodo SG 90 Tower Pro Micro Servo Motor</li>
+<li>Torque: 1.8 kgcm</li>
+<li>Weight: 9 gram</li>
+<li>Gear Type: Plastic</li>
+</ul>
+<p><img alt="Screenshot" src="../img/servo1.jpg" style="height:180px;width:245px" /></p>
+<h6 id="link-to-buy_6"><a href="https://www.banggood.in/TowerPro-SG90-Mini-Micro-Digital-Servo-9g-For-RC-Models-p-984114.html?rmmds=search&amp;cur_warehouse=CN">Link to buy</a></h6>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../cost/" class="btn btn-neutral float-right" title="Cost">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../cost/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
