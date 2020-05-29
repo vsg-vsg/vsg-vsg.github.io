@@ -4,6 +4,7 @@ nav:
 - Hardware: about.md
 - Cost: cost.md
 - Google Colab: googlecolab.md
+- Algorithms: algorithms.md
 
 markdown_extensions:
 - pymdownx.tasklist
