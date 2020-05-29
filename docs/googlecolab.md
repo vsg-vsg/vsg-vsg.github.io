@@ -20,4 +20,4 @@ Google Colab is a free, browser-based notebook environment that runs entirely in
 2. Sharing: You can share the notebook seamlessly, just like a Google Doc. <br/>
 3. Free GPU: Free GPU at the click of a button.
 
-For further information on how it is used in this project refer to the [Algorithms section](algorithms.md).
+For further information on how it is used in this project refer to the [Algorithms section]().
