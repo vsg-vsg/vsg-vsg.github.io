@@ -5,6 +5,7 @@ nav:
 - Cost: cost.md
 - Google Colab: googlecolab.md
 - Algorithms: algorithms.md
+- FAQs: faqs.md
 
 markdown_extensions:
 - pymdownx.tasklist
